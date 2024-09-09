@@ -49,7 +49,7 @@ class Gateway {
      * @param string $platform API Platform (default 'www')
      * @param string $version API Version (default 'v1')
      */
-    public function __construct($merchantId = '', $apiKey, $platform, $version) {
+    public function __construct($merchantId, $apiKey, $platform, $version) {
 		//set configs
 		$this->_config = new Configuration();
 		$this->_config->setMerchantId($merchantId);
